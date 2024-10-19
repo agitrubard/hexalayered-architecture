@@ -579,12 +579,12 @@ It depends on the complexity and potential growth of your service. For simpler s
 read and write operations in a single service class. However, if you anticipate that the service might grow in
 complexity or if you want to maintain consistency with larger services in your project, separating them can be
 beneficial.
+
 Key considerations:
-
-If the service has distinct read and write logic that doesn't overlap significantly, separation might be cleaner.
-
-If you foresee the service growing more complex in the future, early separation can make future changes easier. For very simple CRUD operations, a single service might be more pragmatic.
-Consistency across your project is important. If other services are separated, maintaining the same pattern could be
+- If the service has distinct read and write logic that doesn't overlap significantly, separation might be cleaner.
+- If you foresee the service growing more complex in the future, early separation can make future changes easier. 
+- For very simple CRUD operations, a single service might be more pragmatic.
+- Consistency across your project is important. If other services are separated, maintaining the same pattern could be
 beneficial for developer familiarity.
 
 Remember, the goal is to balance clean architecture principles with practical development needs. It's okay to start with
@@ -596,21 +596,18 @@ should I still separate it according to tasks like Read, Write?**
 
 ```
 Similar to services, the decision to separate ports and adapters depends on the complexity of the operations and the
-potential for future growth. Here are some guidelines:
+potential for future growth. 
 
-For simple CRUD operations, a single port/adapter pair might be sufficient. For example, a TicketPort and TicketAdapter
+Here are some guidelines:
+- For simple CRUD operations, a single port/adapter pair might be sufficient. For example, a TicketPort and TicketAdapter
 could handle all basic operations.
-
-If read and write operations have significantly different concerns (e.g., different external systems, caching
+- If read and write operations have significantly different concerns (e.g., different external systems, caching
 strategies, or transaction requirements), separation might be beneficial.
-
-Consider the Single Responsibility Principle. If read and write operations have distinct responsibilities or might
+- Consider the Single Responsibility Principle. If read and write operations have distinct responsibilities or might
 evolve independently, separating them could make the code more maintainable.
-
-Think about testing: if separating read and write operations would make your tests cleaner and more focused, it might be
+- Think about testing: if separating read and write operations would make your tests cleaner and more focused, it might be
 worth doing.
-
-Consider the consistency with your service layer. If you've separated your services into read and write, it might make
+- Consider the consistency with your service layer. If you've separated your services into read and write, it might make
 sense to reflect this in your ports and adapters.
 
 Ultimately, the decision should be based on your specific use case, the complexity of your domain, and your team's
@@ -621,19 +618,17 @@ key is to keep your code organized, maintainable, and aligned with your project'
 **15. How do I decide when to create separate classes for different operations versus keeping them in one class?**
 
 ```
-This decision applies to both services and ports/adapters. Consider the following factors:
+This decision applies to both services and ports/adapters.
 
-Complexity: If the logic for different operations (e.g., read, write, update) is complex and distinct, separate classes
+Consider the following factors:
+1. Complexity: If the logic for different operations (e.g., read, write, update) is complex and distinct, separate classes
 might be clearer.
-
-Size: If a single class is becoming too large (e.g., over 300 lines), it might be time to split it.
-Change frequency: If certain operations change more frequently than others, separating them can isolate changes.
-
-Reusability: If some operations are reused across different contexts, separating them can promote code reuse.
-Team structure: If different team members or teams are responsible for different operations, separation can help with
+2. Size: If a single class is becoming too large (e.g., over 300 lines), it might be time to split it.
+3. Change frequency: If certain operations change more frequently than others, separating them can isolate changes.
+4. Reusability: If some operations are reused across different contexts, separating them can promote code reuse.
+5. Team structure: If different team members or teams are responsible for different operations, separation can help with
 parallel development.
-
-Performance: In some cases, separating read and write operations can help with optimizing each for its specific needs (
+6. Performance: In some cases, separating read and write operations can help with optimizing each for its specific needs (
 e.g., read optimization vs. write consistency).
 
 Remember, the goal of HexaLayered Architecture is to create a clean, maintainable, and flexible codebase. The level of
@@ -643,25 +638,15 @@ granularity should serve this goal without introducing unnecessary complexity.
 **16. Should I always create interfaces? What happens if I don't create an interface?**
 
 ```
-In HexaLayered Architecture, interfaces are crucial for certain components but not always necessary for every class. Here's a guideline:
+In HexaLayered Architecture, interfaces should be used for communication between all layers.
+This approach should be applied regardless of perceived immediate need.
 
-When to use interfaces:
-1. Ports: Always use interfaces for ports. This is essential for the hexagonal architecture aspect.
-2. Services: Generally use interfaces for services, especially if multiple implementations are possible.
-3. Complex components: Use interfaces for components that might have different implementations in the future.
+The reasons are:
+1. Abstraction: Interfaces provide a layer of abstraction independent of implementation.
+2. Flexibility: Allows for future changes and different implementations.
+3. Testability: Facilitates easy creation of mock objects.
+4. Dependency Management: Reduces dependencies between layers.
+5. Architectural Consistency: Creates a consistent communication structure across all layers.
 
-When interfaces might not be needed:
-1. Simple data objects or DTOs
-2. Utility classes
-3. Classes unlikely to have multiple implementations
-
-Consequences of not using interfaces:
-- Reduced flexibility in swapping implementations
-- More difficult to mock for testing
-- Potential for tighter coupling between components
-
-Best practice:
-Use interfaces where they provide clear benefits (like in ports and services), but avoid creating unnecessary abstractions for simple or stable components.
-
-Remember, the goal is to balance flexibility and simplicity in your architecture.
+Not using interfaces would result in losing these advantages and deviating from the core principles of the architecture. For the success of HexaLayered Architecture, the use of interfaces between all layers is critical.
 ```
