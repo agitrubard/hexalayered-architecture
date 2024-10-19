@@ -320,7 +320,7 @@ public interface TicketRepository extends JpaRepository<TicketEntity, Long> {
 2. **Centrality of Domain Objects**: Put domain objects in the center of the application and execute business logic over
    these objects.
 3. **Dependency Injection**: Use Dependency Injection (DI) to manage interlayer dependencies.
-4. **Naming Consistency**: Stickly adhere to the specified naming standards. This facilitates the readability and
+4. **Naming Consistency**: Sticky adhere to the specified naming standards. This facilitates the readability and
    maintenance of the code.
 5. **Protecting the Modular Structure**: Make each module independent in itself. Keep inter-module dependencies to a
    minimum.
@@ -400,7 +400,7 @@ dev.agitrubard.hexalayered
 │   ├── repository
 │   │   └── TicketRepository
 │   │
-│   └── model
+│   ├── model
 │   │   ├── entity
 │   │   │   └── TicketEntity
 │   │   ├── enums
@@ -591,8 +591,8 @@ Remember, the goal is to balance clean architecture principles with practical de
 a single service and refactor later if needed.
 ```
 
-**14. If I don't have a very comprehensive port/adapter, should I still separate it according to tasks like Read, Write?
-**
+**14. If I don't have a very comprehensive port/adapter,
+should I still separate it according to tasks like Read, Write?**
 
 ```
 Similar to services, the decision to separate ports and adapters depends on the complexity of the operations and the
