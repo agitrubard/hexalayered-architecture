@@ -58,20 +58,16 @@ practices, helping you create scalable and durable applications.
 
 ---
 
-## Architecture Overview
+## 🌁 Architecture Overview
 
-HexaLayered Architecture consists of four main layers:
+**HexaLayered Architecture consists of four main layers.
+These layers communicate with each other through specific interfaces, and each has its own responsibilities.**
 
-1. **Controller Layer**
-2. **Service Layer**
-3. **Port/Adapter Layer**
-4. **Repository Layer**
-
-These layers communicate with each other through specific interfaces, and each has its own responsibilities.
+![hexalayered-architecture.png](documents/architecture/hexalayered-architecture.png)
 
 ---
 
-## Layers and Responsibilities
+## 🔐 Layers and Responsibilities
 
 ### 1. Controller Layer
 
@@ -223,7 +219,7 @@ public interface TicketRepository extends JpaRepository<TicketEntity, Long> {
 
 ---
 
-## Naming Conventions
+## 📝 Naming Conventions
 
 1. **Controller**:
     - Package: `dev.agitrubard.hexalayered.[module].controller`
@@ -275,7 +271,7 @@ public interface TicketRepository extends JpaRepository<TicketEntity, Long> {
 
 ---
 
-## Advantages and Solved Problems
+## 🚀 Advantages and Solved Problems
 
 **1. Reducing Entity Dependency**:
 
@@ -315,7 +311,7 @@ public interface TicketRepository extends JpaRepository<TicketEntity, Long> {
 
 ---
 
-## Best Practices
+## 🎯 Best Practices
 
 1. **Layer Insulation**: Ensure that each layer fulfills its responsibility and is isolated from the details of the
    other layers.
@@ -337,7 +333,7 @@ public interface TicketRepository extends JpaRepository<TicketEntity, Long> {
 
 ---
 
-## Modular Structure
+## 📦 Modular Structure
 
 HexaLayered Architecture divides the application into modules according to different business domains. Each module
 contains the above-mentioned layers.
@@ -463,20 +459,20 @@ dev.agitrubard.hexalayered
 
 ---
 
-## Contribute
+## 🧑‍💻 Contribute
 
 We can work together to develop and improve HexaLayered Architecture. You can review
 the [CONTRIBUTING.md](CONTRIBUTING.md) file to contribute.
 
 ---
 
-## License
+## 🪪 License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
 
-## FAQ
+## ❓ FAQ
 
 **1. How can I integrate HexaLayered Architecture into my current project?**
 
