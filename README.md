@@ -206,7 +206,8 @@ class TicketSaveAdapter implements TicketSavePort {
 - **Input**: Entity Object or specific wrapper objects | `TicketEntity` or `Long` or `String` etc.
 - **Output**: Entity Object or specific wrapper objects | `TicketEntity` or `Long` or `String` etc.
 - **Communication**: Called by adapters (port implementations).
-- **Access Modifier**: `public`
+- **Access Modifier**:
+    - Repository interfaces should be `public`
 
 **Example:**
 
