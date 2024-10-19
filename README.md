@@ -639,3 +639,29 @@ e.g., read optimization vs. write consistency).
 Remember, the goal of HexaLayered Architecture is to create a clean, maintainable, and flexible codebase. The level of
 granularity should serve this goal without introducing unnecessary complexity.
 ```
+
+**16. Should I always create interfaces? What happens if I don't create an interface?**
+
+```
+In HexaLayered Architecture, interfaces are crucial for certain components but not always necessary for every class. Here's a guideline:
+
+When to use interfaces:
+1. Ports: Always use interfaces for ports. This is essential for the hexagonal architecture aspect.
+2. Services: Generally use interfaces for services, especially if multiple implementations are possible.
+3. Complex components: Use interfaces for components that might have different implementations in the future.
+
+When interfaces might not be needed:
+1. Simple data objects or DTOs
+2. Utility classes
+3. Classes unlikely to have multiple implementations
+
+Consequences of not using interfaces:
+- Reduced flexibility in swapping implementations
+- More difficult to mock for testing
+- Potential for tighter coupling between components
+
+Best practice:
+Use interfaces where they provide clear benefits (like in ports and services), but avoid creating unnecessary abstractions for simple or stable components.
+
+Remember, the goal is to balance flexibility and simplicity in your architecture.
+```
