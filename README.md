@@ -1,5 +1,7 @@
 # 🏛️ HexaLayered Architecture
 
+![](/documents/images/cover.jpg?raw=true)
+
 ## Table of Contents
 
 1. [Summary](#summary)
