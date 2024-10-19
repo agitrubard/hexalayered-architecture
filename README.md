@@ -15,9 +15,12 @@
 5. [Advantages and Solved Problems](#advantages-and-solved-problems)
 6. [Best Practices](#best-practices)
 7. [Modular Structure](#modular-structure)
-8. [Contribute](#contribute)
-9. [License](#license)
-10. [FAQ](#faq)
+8. [Projects Using HexaLayered Architecture](#projects-using-hexalayered-architecture)
+    - [1. Disaster Management System | AYS APIs](#1-disaster-management-system--ays-apis)
+    - [2. Gelecek Bilimde Community Science Communication Platform APIs](#2-gelecek-bilimde-community-science-communication-platform-apis)
+9. [Contribute](#contribute)
+10. [License](#license)
+11. [FAQ](#faq)
 
 ## Summary
 
