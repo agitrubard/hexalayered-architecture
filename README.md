@@ -73,8 +73,9 @@ These layers communicate with each other through specific interfaces, and each h
 
 ### 1. Controller Layer
 
+**Meets HTTP requests, processes request objects, and returns appropriate response objects.**
+
 - **Package**: `dev.agitrubard.hexalayered.[module].controller`
-- **Responsibility**: Meets HTTP requests, processes request objects, and returns appropriate response objects.
 - **Input**: Request Object | `TicketCreateRequest`
 - **Output**: Response Object | `TicketResponse`
 - **Communication**: It communicates directly with the Service Layer.
@@ -106,10 +107,11 @@ class TicketController {
 
 ### 2. Service Layer
 
+**Executes business logic, performs necessary validations and performs operations on domain objects.**
+
 - **Package**:
     - Interface: `dev.agitrubard.hexalayered.[module].service`
     - Implementation: `dev.agitrubard.hexalayered.[module].service.impl`
-- **Responsibility**: Executes business logic, performs necessary validations and performs operations on domain objects.
 - **Input**: Request Object or specific wrapper objects | `TicketCreateRequest` or `Long` or `String` etc.
 - **Output**: Domain Object or specific wrapper objects | `Ticket` or `Long` or `String` etc.
 - **Communication**:
@@ -150,11 +152,13 @@ class TicketCreateServiceImpl implements TicketCreateService {
 
 ### 3. Port/Adapter Layer
 
+**Provides communication with external systems, converts domain objects into formats that external systems can
+understand
+and does the opposite.**
+
 - **Package**:
     - Port: `dev.agitrubard.hexalayered.[module].port`
     - Adapter: `dev.agitrubard.hexalayered.[module].port.adapter`
-- **Responsibility**: Provides communication with external systems, converts domain objects into formats that external
-  systems can understand and does the opposite.
 - **Input**: Domain Object or specific wrapper objects | `Ticket` or `Long` or `String` etc.
 - **Output**: Domain Object or specific wrapper objects | `Ticket` or `Long` or `String` etc.
 - **Communication**:
@@ -198,8 +202,9 @@ class TicketSaveAdapter implements TicketSavePort {
 
 ### 4. Repository Layer
 
+**Performs database operations, manages CRUD operations on entity objects.**
+
 - **Paket**: `dev.agitrubard.hexalayered.[module].repository`
-- **Responsibility**: Performs database operations, manages CRUD operations on entity objects.
 - **Input**: Entity Object or specific wrapper objects | `TicketEntity` or `Long` or `String` etc.
 - **Output**: Entity Object or specific wrapper objects | `TicketEntity` or `Long` or `String` etc.
 - **Communication**: Called by adapters (port implementations).
