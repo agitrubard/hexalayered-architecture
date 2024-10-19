@@ -59,7 +59,7 @@ uygulamalar oluşturmanıza yardımcı olan güçlü bir mimari çözüm sunar.
 
 ## Mimari Genel Bakış
 
-**HexaLayered Mimari dört ana katmandan oluşur. 
+**HexaLayered Mimari dört ana katmandan oluşur.
 Bu katmanlar birbirleriyle belirli arayüzler üzerinden iletişim kurar ve her birinin kendi sorumlulukları vardır.**
 
 ![hexalayered-architecture.png](/documents/architecture/hexalayered-architecture.png)
@@ -461,6 +461,7 @@ dev.agitrubard.hexalayered
 HexaLayered Architecture'ın gerçek dünya uygulamalarını görmek için aşağıdaki açık kaynak projeleri inceleyebilirsiniz:
 
 ### 1. Afet Yönetim Sistemi | AYS APIs
+
 **Bu proje, HexaLayered Architecture'ın karmaşık ve kritik sistemlerde nasıl uygulandığını göstermektedir.**
 
 https://github.com/afet-yonetim-sistemi/ays-be
@@ -482,9 +483,12 @@ https://github.com/gelecekbilimde/backend
 - Genişletilmiş arama ve filtreleme özellikleri
 - Güvenlik ve yetkilendirme özellikleri
 
-Bu projeler, HexaLayered Architecture'ın farklı kullanım senaryolarında nasıl uygulandığını göstermektedir. Her iki proje de açık kaynak olduğundan, kodlarını inceleyebilir ve mimarinin pratik uygulamalarını detaylı olarak görebilirsiniz.
+Bu projeler, HexaLayered Architecture'ın farklı kullanım senaryolarında nasıl uygulandığını göstermektedir. Her iki
+proje de açık kaynak olduğundan, kodlarını inceleyebilir ve mimarinin pratik uygulamalarını detaylı olarak
+görebilirsiniz.
 
-> Eğer siz de HexaLayered Architecture'ı kullanan bir proje geliştirdiyseniz ve burada listelemek isterseniz, lütfen bildirin!
+> Eğer siz de HexaLayered Architecture'ı kullanan bir proje geliştirdiyseniz ve burada listelemek isterseniz, lütfen
+> bildirin!
 
 ---
 

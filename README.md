@@ -465,6 +465,7 @@ dev.agitrubard.hexalayered
 You can explore the following open-source projects to see real-world applications of HexaLayered Architecture:
 
 ### 1. Disaster Management System | AYS APIs
+
 **This project demonstrates how HexaLayered Architecture is implemented in complex and critical systems.**
 
 https://github.com/afet-yonetim-sistemi/ays-be
@@ -486,7 +487,8 @@ https://github.com/gelecekbilimde/backend
 - Extended search and filtering capabilities
 - Security and authorization features
 
-These projects demonstrate how HexaLayered Architecture is applied in different use cases. As both projects are open-source, you can examine their code and see detailed practical applications of the architecture.
+These projects demonstrate how HexaLayered Architecture is applied in different use cases. As both projects are
+open-source, you can examine their code and see detailed practical applications of the architecture.
 
 > If you have developed a project using HexaLayered Architecture and would like it listed here, please let us know!
 
