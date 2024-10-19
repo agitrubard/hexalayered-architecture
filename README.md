@@ -63,7 +63,7 @@ practices, helping you create scalable and durable applications.
 **HexaLayered Architecture consists of four main layers.
 These layers communicate with each other through specific interfaces, and each has its own responsibilities.**
 
-![hexalayered-architecture.png](documents/architecture/hexalayered-architecture.png)
+![hexalayered-architecture.png](/documents/architecture/hexalayered-architecture.png?raw=true)
 
 ---
 
