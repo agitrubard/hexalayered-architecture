@@ -466,7 +466,7 @@ HexaLayered Architecture'ın gerçek dünya uygulamalarını görmek için aşa�
 
 https://github.com/afet-yonetim-sistemi/ays-be
 
-- Modüler katman yapısı
+- Modüler yapı
 - Uçtan uca hata yönetimi
 - Genişletilmiş arama ve filtreleme özellikleri
 - Kapsamlı test altyapısı
@@ -478,7 +478,7 @@ Bu proje, HexaLayered Architecture'ın içerik yönetimi ve API tasarımında na
 
 https://github.com/gelecekbilimde/backend
 
-- Modüler servis yapısı
+- Modüler yapı
 - Uçtan uca hata yönetimi
 - Genişletilmiş arama ve filtreleme özellikleri
 - Güvenlik ve yetkilendirme özellikleri

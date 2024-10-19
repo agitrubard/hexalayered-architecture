@@ -470,7 +470,7 @@ You can explore the following open-source projects to see real-world application
 
 https://github.com/afet-yonetim-sistemi/ays-be
 
-- Modular layer structure
+- Modular structure
 - End-to-end error handling
 - Extended search and filtering capabilities
 - Comprehensive testing infrastructure
@@ -482,7 +482,7 @@ This project showcases how HexaLayered Architecture is used in content managemen
 
 https://github.com/gelecekbilimde/backend
 
-- Modular service structure
+- Modular structure
 - End-to-end error handling
 - Extended search and filtering capabilities
 - Security and authorization features
