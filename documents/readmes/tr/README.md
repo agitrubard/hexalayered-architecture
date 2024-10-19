@@ -456,6 +456,38 @@ dev.agitrubard.hexalayered
 
 ---
 
+## Kullanılan Projeler
+
+HexaLayered Architecture'ın gerçek dünya uygulamalarını görmek için aşağıdaki açık kaynak projeleri inceleyebilirsiniz:
+
+### 1. Afet Yönetim Sistemi | AYS APIs
+**Bu proje, HexaLayered Architecture'ın karmaşık ve kritik sistemlerde nasıl uygulandığını göstermektedir.**
+
+https://github.com/afet-yonetim-sistemi/ays-be
+
+- Modüler katman yapısı
+- Uçtan uca hata yönetimi
+- Genişletilmiş arama ve filtreleme özellikleri
+- Kapsamlı test altyapısı
+- Gelişmiş güvenlik ve yetkilendirme özellikleri
+
+### 2. Gelecek Bilimde Community Science Communication Platform APIs
+
+Bu proje, HexaLayered Architecture'ın içerik yönetimi ve API tasarımında nasıl kullanıldığını göstermektedir.
+
+https://github.com/gelecekbilimde/backend
+
+- Modüler servis yapısı
+- Uçtan uca hata yönetimi
+- Genişletilmiş arama ve filtreleme özellikleri
+- Güvenlik ve yetkilendirme özellikleri
+
+Bu projeler, HexaLayered Architecture'ın farklı kullanım senaryolarında nasıl uygulandığını göstermektedir. Her iki proje de açık kaynak olduğundan, kodlarını inceleyebilir ve mimarinin pratik uygulamalarını detaylı olarak görebilirsiniz.
+
+> Eğer siz de HexaLayered Architecture'ı kullanan bir proje geliştirdiyseniz ve burada listelemek isterseniz, lütfen bildirin!
+
+---
+
 ## Katkıda Bulunma
 
 HexaLayered Mimari'yi geliştirmek ve iyileştirmek için birlikte çalışabiliriz. Katkıda bulunmak
