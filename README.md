@@ -61,6 +61,20 @@ practices, helping you create scalable and durable applications.
 
 ---
 
+## Support
+
+<p>
+  <a href="https://www.buymeacoffee.com/agitrubard">
+    <img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-FFDD00?style=for-the-badge&logo=buymeacoffee&logoColor=000" />
+  </a>
+    &nbsp;
+  <a href="https://github.com/sponsors/agitrubard">
+    <img src="https://img.shields.io/badge/Support%20on-GitHub-111111?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+</p>
+
+---
+
 ## 🌁 Architecture Overview
 
 **HexaLayered Architecture consists of four main layers.
