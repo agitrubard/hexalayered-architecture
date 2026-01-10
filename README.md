@@ -2,6 +2,18 @@
 
 ![](/documents/images/cover.jpg?raw=true)
 
+## Support
+
+<p>
+  <a href="https://www.buymeacoffee.com/agitrubard">
+    <img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-FFDD00?style=for-the-badge&logo=buymeacoffee&logoColor=000" />
+  </a>
+    &nbsp;
+  <a href="https://github.com/sponsors/agitrubard">
+    <img src="https://img.shields.io/badge/Support%20on-GitHub-111111?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+</p>
+
 ## Table of Contents
 
 1. [Summary](#summary)
@@ -58,20 +70,6 @@ architecture to the needs of your project when necessary.
 This architectural approach guides software development teams in writing clean, modular and sustainable code. As a
 result, HexaLayered Architecture offers a powerful architectural solution that supports modern software development
 practices, helping you create scalable and durable applications.
-
----
-
-## Support
-
-<p>
-  <a href="https://www.buymeacoffee.com/agitrubard">
-    <img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-FFDD00?style=for-the-badge&logo=buymeacoffee&logoColor=000" />
-  </a>
-    &nbsp;
-  <a href="https://github.com/sponsors/agitrubard">
-    <img src="https://img.shields.io/badge/Support%20on-GitHub-111111?style=for-the-badge&logo=github&logoColor=white" />
-  </a>
-</p>
 
 ---
 
