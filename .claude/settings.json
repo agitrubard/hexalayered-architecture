@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "sh \"$CLAUDE_PROJECT_DIR/.claude/scripts/check-architecture.sh\"",
+            "timeout": 20
+          }
+        ]
+      }
+    ]
+  },
+  "permissions": {
+    "allow": [
+      "Bash(sh .claude/scripts/check-architecture.sh:*)",
+      "Bash(sh .claude/scripts/new-feature.sh:*)",
+      "Bash(./mvnw test:*)",
+      "Bash(./mvnw -q test:*)",
+      "Bash(./mvnw compile:*)",
+      "Bash(./mvnw verify:*)",
+      "Bash(./gradlew test:*)",
+      "Bash(./gradlew build:*)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git branch:*)",
+      "Bash(find:*)",
+      "Bash(tree:*)"
+    ],
+    "deny": []
+  }
+}
